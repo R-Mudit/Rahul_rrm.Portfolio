@@ -62,7 +62,7 @@ window.addEventListener('scroll', () => {
 
 /*Typing Animation*/
 const typingText = document.querySelector('.typing-text');
-const phrases = ['Full Stack Developer', 'Web Designer', 'Problem Solver'];
+const phrases = ['Web Developer'];
 let phraseIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
