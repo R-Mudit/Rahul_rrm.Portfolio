@@ -60,7 +60,7 @@ window.addEventListener('scroll', () => {
     });
 });
 
-// Typing Animation
+/*Typing Animation*/
 const typingText = document.querySelector('.typing-text');
 const phrases = ['Full Stack Developer', 'Web Designer', 'Problem Solver'];
 let phraseIndex = 0;
@@ -92,37 +92,6 @@ function type() {
 
 type();
 
-// Skill Progress Animation
-const skillSection = document.querySelector('#skills');
-const progressBars = document.querySelectorAll('.progress');
-let animated = false;
-
-function animateSkills() {
-    if (animated) return;
-    
-    progressBars.forEach(progress => {
-        const width = progress.style.width;
-        progress.style.width = '0';
-        setTimeout(() => {
-            progress.style.width = width;
-        }, 100);
-    });
-    animated = true;
-}
-
-window.addEventListener('scroll', () => {
-    if (isInViewport(skillSection)) {
-        animateSkills();
-    }
-});
-
-function isInViewport(element) {
-    const rect = element.getBoundingClientRect();
-    return (
-        rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.bottom >= 0
-    );
-}
 
 // Contact Form
 const contactForm = document.getElementById('contact-form');
@@ -165,4 +134,41 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('.project-card, .skill-card, .timeline-item').forEach(el => {
     el.classList.add('hidden');
     observer.observe(el);
+});
+
+// Certificate Modal Functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const modal = document.getElementById('certificate-modal');
+    const modalImg = document.getElementById('certificate-preview');
+    const captionText = document.getElementById('caption');
+    const closeBtn = document.getElementsByClassName('modal-close')[0];
+
+    // Open modal when clicking on certificate
+    document.querySelectorAll('.certificate-container').forEach(container => {
+        container.addEventListener('click', function() {
+            const img = this.querySelector('.certificate-img');
+            modal.style.display = "block";
+            modalImg.src = img.src;
+            captionText.innerHTML = img.alt;
+        });
+    });
+
+    // Close modal
+    closeBtn.addEventListener('click', function() {
+        modal.style.display = "none";
+    });
+
+    // Close modal when clicking outside
+    window.addEventListener('click', function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    });
+
+    // Close modal with escape key
+    document.addEventListener('keydown', function(event) {
+        if (event.key === "Escape") {
+            modal.style.display = "none";
+        }
+    });
 });

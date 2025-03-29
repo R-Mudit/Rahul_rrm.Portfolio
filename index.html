@@ -16,13 +16,11 @@
 
     <!-- Navigation -->
     <nav>
-        <div class="logo">
-            <img src="/api/placeholder/50/50" alt="Your Logo">
-            <span>Portfolio</span>
-        </div>
+        
         <ul class="nav-links">
             <li><a href="#home" class="active"><i class="fas fa-home"></i> Home</a></li>
             <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+            <li><a href="#experience"><i class="fas fa-briefcase"></i>Experience</a></li>
             <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
             <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
             <li><a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
@@ -37,19 +35,20 @@
 
     <!-- Home Section -->
     <section id="home" class="section">
-        <div class="container">
+        <div class="hcontainer">
             <div class="profile-container">
                 <div class="profile-frame">
-                    <img src="/api/placeholder/300/300" alt="Your Photo">
+                    <img src="rahul3.png" alt="Your Photo">
                 </div>
             </div>
             <div class="intro-text">
-                <h1>Hello, I'm <span class="highlight">Your Name</span></h1>
-                <p class="typing-text">I'm a Full Stack Developer</p>
+                <h1>Hello, I'm <span class="highlight">Rahul Rai</span></h1>
+                <p class="typing-text">I'm a Web Developer</p>
+                <p> Currently working as an Intern at GAOTek.</p>
                 <div class="social-links">
                     <a href="#"><i class="fab fa-github"></i></a>
                     <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
                 </div>
             </div>
         </div>
@@ -60,25 +59,94 @@
         <h2>About Me</h2>
         <div class="container">
             <div class="about-content">
-                <p>A passionate Full Stack Developer with expertise in creating elegant solutions. I love turning complex problems into simple, beautiful, and intuitive designs.</p>
-                <div class="stats">
-                    <div class="stat-item">
-                        <h3>2+</h3>
-                        <p>Years Experience</p>
-                    </div>
-                    <div class="stat-item">
-                        <h3>20+</h3>
-                        <p>Projects Completed</p>
-                    </div>
-                    <div class="stat-item">
-                        <h3>10+</h3>
-                        <p>Happy Clients</p>
-                    </div>
-                </div>
+                <p>Hello, I'am Rahul Rai currently working as an Web Developer Intern at GAOTek; pursuing second year degree in Bachelors of Computer Applications from KES Shroff's College affiliated with Mumbai University. </p>
+                <p>
+                    I am a passionate developer and I enjoy creating creative designs of Web Pages; apart from this I am a problem solver and I enjoy solving complex problems of DSA.
+                </p>
+                <p>
+                    I have gained certifications in Web Development, C++, Python and java. I have also gainded experience in working with SQL. I have also worked on various projects and have gained experience in working with HTML, CSS, JavaScript, Python and C++.
+                </p> 
+                    Apart from this I am also a good team player and I enjoy working in a team. I am a quick learner and I am always willing to learn new technologies. I am a good communicator and I enjoy communicating with people. 
+                </p>    
+                <p>
+                    As of being a passionte sports man I am skilled as an Team player and enjoy team playing sports and my favorite sport is Kabaddi. 
+                </p>
+                    I am seeking an oppurtunity to work with you and confident that I will be able to contribute to your team. I am sure that I would be creating a great impact in your team. Working in your team will help me to gain more experience and would help me to learn new things as well.
+                </p>
             </div>
         </div>
     </section>
+       <!-- Experience Section -->
+    <section id="experience" class="section">
+        <h2><i class="fas fa-briefcase"></i> Work Experience</h2>
+        <div class="experience-container">
+            <!-- Web Development Experience -->
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div class="company-logo">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="experience-title">
+                        <h3>Blockchain Intern</h3>
+                        <h4>VI & AICTE & Eduskills</h4>
+                        <span class="duration">Jan 2024 - Present</span>
+                    </div>
+                </div>
+                <div class="experience-body">
+                    <ul class="responsibilities">
+                        <li>Developed and maintained responsive web applications</li>
+                        <li>Collaborated with senior developers on various projects</li>
+                        <li>Implemented modern UI/UX designs</li>
+                        <li>Participated in code reviews and team meetings</li>
+                    </ul>
+                    
+                    <div class="certificate-container">
+                        <img src="static/images/vi.png" alt="Blockchain Certificate" class="certificate-img">
+                        <div class="certificate-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <span>View Certificate</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div class="company-logo">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="experience-title">
+                        <h3>Cybersecurity Intern</h3>
+                        <h4>IBM Skillsbuild & AICTE & Eduskills</h4>
+                        <span class="duration">Jan 2024 - Present</span>
+                    </div>
+                </div>
+                <div class="experience-body">
+                    <ul class="responsibilities">
+                        <li>Developed and maintained responsive web applications</li>
+                        <li>Collaborated with senior developers on various projects</li>
+                        <li>Implemented modern UI/UX designs</li>
+                        <li>Participated in code reviews and team meetings</li>
+                    </ul>
+                    
+                    <div class="certificate-container">
+                        <img src="static/images/ibm.png" alt="Cybersecurity Certificate" class="certificate-img">
+                        <div class="certificate-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <span>View Certificate</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more experience cards as needed -->
+        </div>
 
+        <!-- Modal for Certificate Preview -->
+        <div id="certificate-modal" class="modal">
+            <span class="modal-close">&times;</span>
+            <img class="modal-content" id="certificate-preview">
+            <div id="caption"></div>
+        </div>
+    </section>
     <!-- Skills Section -->
     <section id="skills" class="section">
         <h2>My Skills</h2>
@@ -87,30 +155,49 @@
                 <div class="skill-card">
                     <i class="fab fa-html5"></i>
                     <h3>HTML5</h3>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 90%"></div>
-                    </div>
+                    
                 </div>
                 <div class="skill-card">
                     <i class="fab fa-css3-alt"></i>
                     <h3>CSS3</h3>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 85%"></div>
-                    </div>
+                    
                 </div>
                 <div class="skill-card">
                     <i class="fab fa-js"></i>
                     <h3>JavaScript</h3>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 80%"></div>
-                    </div>
+                    
                 </div>
                 <div class="skill-card">
                     <i class="fab fa-python"></i>
                     <h3>Python</h3>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 75%"></div>
-                    </div>
+                    
+                </div>
+                
+                <div class="skill-card">
+                    <i class="fab fa-java"></i>
+                    <h3>Core Java</h3>
+                    
+                </div>
+
+                <div class="skill-card">
+                    <i class="fas fa-sitemap"></i>  <!-- Using sitemap icon for DSA -->
+                    <h3>Data Structures & Algorithms</h3>
+                    
+                </div>
+                
+                <div class="skill-card">
+                    <i class="fas fa-database"></i>  <!-- Database icon for SQL -->
+                    <h3>SQL & Oracle</h3>
+                </div>
+                
+                <div class="skill-card">
+                    <i class="fas fa-code-branch"></i>  <!-- Code branch icon for Visual Studio -->
+                    <h3>Visual Studio</h3>
+                </div>
+                
+                <div class="skill-card">
+                    <i class="fas fa-code"></i>  <!-- Java icon for Eclipse -->
+                    <h3>Eclipse IDE</h3>
                 </div>
             </div>
         </div>
@@ -119,22 +206,27 @@
     <!-- Education Section -->
     <section id="education" class="section">
         <h2>Education</h2>
-        <div class="container">
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>Master's Degree</h3>
-                        <p>University Name</p>
-                        <span class="date">2020 - 2022</span>
+        <div class="education-grid">
+            <div class="education-card">
+                <div class="education-content">
+                    <span class="date-badge">2023 - Present</span>
+                    <h3>Bachelor of Computer Applications</h3>
+                    <p>KES Shroff College - Mumbai University</p>
+                    <div class="edu-details">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Computer Science</span>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>Bachelor's Degree</h3>
-                        <p>University Name</p>
-                        <span class="date">2016 - 2020</span>
+            </div>
+            
+            <div class="education-card">
+                <div class="education-content">
+                    <span class="date-badge">2021 - 2023</span>
+                    <h3>Higher Secondary Education</h3>
+                    <p>T.P Bhatia College</p>
+                    <div class="edu-details">
+                        <i class="fas fa-book"></i>
+                        <span>Science Stream</span>
                     </div>
                 </div>
             </div>
@@ -147,24 +239,36 @@
         <div class="container">
             <div class="projects-grid">
                 <div class="project-card">
-                    <img src="/api/placeholder/400/300" alt="Project 1">
+                    <img src="Stegano.png" alt="Project 1">
                     <div class="project-info">
-                        <h3>Project Title 1</h3>
-                        <p>Project description goes here. Technologies used and key features.</p>
+                        <h3>Data Hiding in Images using Steganography</h3>
+                        <ul>
+                            <li>Image-Based Data Hiding: Developed a Java application to embed confidential data (text or files) into image files using steganography techniques, ensuring the data remains hidden within the image pixels.</li>
+                            <li>Custom Encryption: Implemented encryption algorithms to secure the hidden data, providing an additional layer of protection against unauthorized access.</li>
+                            <li>Data Extraction: Enabled retrieval of hidden information from images, allowing users to extract and decrypt data securely.</li>
+                            <li>Seamless Integration: Ensured minimal distortion in the host image, preserving its quality while hiding the data, making it imperceptible to the human eye.</li>
+                            <li>User-Friendly Interface: Created an intuitive GUI in Java for easy selection of images, data embedding, and extraction processes, enhancing user experience.</li>
+                        </ul>
+                        <p>Technologies used: Java, Ecllipse IDE</p>
                         <div class="project-links">
-                            <a href="#" class="btn">Live Demo</a>
-                            <a href="#" class="btn">Source Code</a>
+                            <a href="https://github.com/R-Mudit/stegnography.git" class="btn">Source Code</a>
                         </div>
                     </div>
                 </div>
                 <div class="project-card">
-                    <img src="/api/placeholder/400/300" alt="Project 2">
+                    <img src="static/images/land.png" alt="Project 2">
                     <div class="project-info">
-                        <h3>Project Title 2</h3>
-                        <p>Project description goes here. Technologies used and key features.</p>
+                        <h3>Land registry using blockchain</h3>
+                        <ul>
+                            <li>Blockchain-based Land Registration: Built a smart contract on Ethereum to securely register and manage land ownership on a decentralized platform.</li>
+                            <li>Unique Land IDs: Assigned unique IDs to land parcels, ensuring accurate records with details like location, area, and owner.</li>
+                            <li>Fraud Prevention: Ensured only unregistered land can be added, preventing fraudulent registrations.</li>
+                            <li>Secure Ownership Transfers: Enabled secure property transfers, allowing only the current owner to sell or transfer land.</li>
+                            <li>Instant Verification: Provided public, real-time access to land details on the blockchain for transparency.</li>
+                        </ul>
+                        <p>Technologies used: Remix IDE & Solidity</p>
                         <div class="project-links">
-                            <a href="#" class="btn">Live Demo</a>
-                            <a href="#" class="btn">Source Code</a>
+                            <a href="https://github.com/R-Mudit/landregistery.git" class="btn">Source Code</a>
                         </div>
                     </div>
                 </div>
@@ -180,15 +284,11 @@
                 <div class="contact-info">
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
-                        <p>email@example.com</p>
+                        <a href="rahul.r.mudit2005@gmail.com"><p>Email me here</p></a>
                     </div>
                     <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <p>+1 234 567 890</p>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p>Your Location</p>
+                        <i class="fab fa-linkedin"></i>
+                        <a href="Linkedin.com"><p>Connect me here</p></a>
                     </div>
                 </div>
                 <form id="contact-form" action="https://formspree.io/your-email@domain.com" method="POST">
@@ -210,10 +310,32 @@
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    <<footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                Rahul Rai Mudit
+            </div>
+            
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+            
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            
+            <div class="footer-copyright">
+                © 2024 Rahul Rai. All rights reserved.
+                <br>
+                Designed & Built with ❤️
+            </div>
+        </div>
     </footer>
-
     <script src="script.js"></script>
 </body>
 </html>
